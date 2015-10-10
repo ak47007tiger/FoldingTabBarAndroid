@@ -1,0 +1,59 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             android:background="#9c6d83"
+             tools:context=".MainActivity">
+    <Button
+            android:id="@+id/startRotateAm"
+            android:layout_gravity="right"
+            android:text="animation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <LinearLayout
+            android:id="@+id/rotate_container"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+        <View
+                android:background="#a35390"
+                android:layout_width="64dp"
+                android:layout_height="64dp"/>
+
+        <View
+                android:background="#635390"
+                android:layout_width="64dp"
+                android:layout_height="64dp"/>
+
+        <View
+                android:background="#63a390"
+                android:layout_width="64dp"
+                android:layout_height="64dp"/>
+
+        <View
+                android:background="#a38390"
+                android:layout_width="64dp"
+                android:layout_height="64dp"/>
+    </LinearLayout>
+
+    <com.foldingtabbarandroid.app.widget.foldingtabbar.FoldingTabBar
+            android:id="@+id/foldingTabBar"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="56dp">
+
+        <TextView
+                android:id="@id/flb_showorhide_btnid"
+                android:text="+"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="48dp"
+                android:layout_height="48dp"/>
+
+    </com.foldingtabbarandroid.app.widget.foldingtabbar.FoldingTabBar>
+</FrameLayout>
